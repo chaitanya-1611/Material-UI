@@ -1,6 +1,10 @@
 import React from "react";
-import { Button, Container} from "@mui/material";
+import { Button, Container } from "@mui/material";
 import Typography from "@mui/material/Typography";
+import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
+
+
+
 
 
 const create = () => {
@@ -15,7 +19,9 @@ const create = () => {
         Create a New Note
       </Typography>
 
-      <Button type="submit" color="error" variant="contained">Submit</Button>
+      <Button type="submit" variant="contained" endIcon={<KeyboardArrowRightIcon/>}>
+        Submit
+      </Button>
     </Container>
   );
 };
